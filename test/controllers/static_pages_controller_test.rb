@@ -9,7 +9,11 @@ class StaticPagesControllerTest < ActionController::TestCase
   test "should get home" do
     get :home
     assert_response :success
+<<<<<<< HEAD
     assert_select "title", "Home | #{@base_title}"
+=======
+    assert_select "title", "#{@base_title}"
+>>>>>>> master
   end
 
   test "should get help" do
@@ -22,5 +26,15 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :about
     assert_response :success
     assert_select "title", "About | #{@base_title}"
+<<<<<<< HEAD
+=======
   end
+  
+  test "should get contact" do
+    get :contact
+    assert_response :success
+    assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
+>>>>>>> master
+  end
+  
 end
