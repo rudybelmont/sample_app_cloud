@@ -55,6 +55,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
+  #To verify that Listing 6.41 tests the right thing, comment out the before_save line to get to red, then uncomment it to get to green.
   test "email addresses should be saved as lower-case" do
     mixed_case_email = "Foo@ExAMPle.CoM"
     @user.email = mixed_case_email
